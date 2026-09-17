@@ -1,60 +1,98 @@
 @font-face {
-    font-family: 'Unbounded';
-    src: url('../fonts/Unbounded-Bold.ttf') format('truetype');
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    Background-color: white;
-    color: black;
-    text-align: center;
+    background-color: #0E1014;
+    color: #FFFFFF;
 }
 
+header img{
+    display: block;
+    margin: 75px 0 0 360px;
+}
 
 h1 {
-    font-family: 'Unbounded', sans-serif;
     font-size: 80px;
+    font-family: "Unbounded", sans-serif;
     font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
 }
 
-h1 span{
-        color: #9747FF;
+h1 span {
+    color:#9747FF
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
     font-size: 24px;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-}
+    text-align: center;
+    margin-top: 24px;
 
-a{
-    color: black;
+    }
+
+a {
+    color: #FFFFFF;
     text-decoration: none;
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 24px;    
+    font-family: "Poppins";
     background-color: #9747FF;
-    padding: 10px 20px;
-    border-radius: 36px;
     width: 340px;
     height: 66px;
-    display: inline-block;
+    display: block;
     text-align: center;
     line-height: 66px;
-    align-items: center;
+    border-radius: 36px;
+    margin: 40px auto;
+
+
+    /*margens
+    opção 1, menos eficiente - ver mangens no figma e colocar em pixels
+    margin-right: 790px;
+    margin-left: 790px; */
+
+    /*margens declaração para todos os lados, no sentido horário, superior, direita, inferior, esquerda
+    opção 2 
+    margin-top: 0px;
+    margin-right: 790px;
+    margin-bottom: 0px;
+    margin-left: 790px; 
+
+    margens declaração para todos os lados, no sentido horário, "resumido" 
+    opção 3 
+    margin: 0px 790px 0px 790px;
+
+    margens declaração para todos os lados, no sentido horário, "resumido"
+    opção 4 */
    
+}
+a:hover{
+    background-color: #8233E8;
+}
+
+section img{
+    display: block;
+    width: 792;
+    height: 446;
+    margin: 0 auto;
 }
